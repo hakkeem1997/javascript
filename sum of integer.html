@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<script>
+    function sum(){
+        var x=document.getElementById("button").value; 
+        var array=x.split(" ");
+        var y=array.reduce(function(a,b){
+            f=parseInt(a);
+            i=parseInt(b);
+            return (f+i);
+        })
+        alert(y);
+    }
+    
+    </script>
+    </head>
+    <body>
+            <form> 
+         <input type=text id=button >
+    <button onclick = "sum()" id="but">click me</button>
+    </form>
+    </body>
+    
+   

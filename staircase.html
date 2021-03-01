@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head></head>
+<style>
+    #case{
+        border:  solid red;
+    }
+</style>
+<script>
+     function me(){
+    var a=Number(document.getElementById("i").value);  
+    var width=100;
+    for(i=0;i<a;i++){
+    var b=document.createElement("div");
+    b.style.width=width+"px";
+    width=width+100;
+    b.style.height="100px";
+    b.style.backgroundColor="aqua";
+    document.getElementById("case").appendChild(b);
+        }
+        }
+</script>
+</head>
+<body>
+
+<input type="text" id="i">
+<button onclick="me()">click me</button>
+<br><br>
+<div id="case">
+</div>
+</body>
+

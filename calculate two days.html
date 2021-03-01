@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head></head>
+<input type="date" id="screen">
+<input type="date" id="screen2">
+<button onclick="dat()">click</button>
+
+
+<body>
+    <script>
+    function dat() {
+         var x = new Date(document.getElementById("screen").value);
+     var y = new Date(document.getElementById("screen2").value);
+     var z = y.getDate() - x.getDate();
+     alert(Math.abs(z)); 
+     }
+      
+    </script>
+
+        
+
+</body>
